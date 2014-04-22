@@ -2,10 +2,22 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title Client Template
+    title Pacman
     link(rel='stylesheet', href='./css/app.css')
   body
-    h1 Client Template
+    button#start Start
+
+    #container
+      table#table
+        tr
+          td(data-x=0, data-y=0)
+          td(data-x=1, data-y=0)
+        tr
+          td(data-x=0, data-y=1)
+          td(data-x=1, data-y=1)
+        tr
+          td(data-x=0, data-y=2)
+          td(data-x=1, data-y=2)
 
     script(src='./js/vendor/jquery-2.1.0.js')
     script(src='./js/source/main.js')
